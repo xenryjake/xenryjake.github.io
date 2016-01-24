@@ -28,7 +28,7 @@
 </html>
 
 <style>
-  .welcome{
+.welcome{
   color: #ffe5ff;
   font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
   font-style: oblique;
@@ -47,6 +47,7 @@ body{
     background: blue;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position:fixed;
     background: -webkit-linear-gradient(#ffb3ff, #e5eeff);
     background: -o-linear-gradient(#ffb3ff, #e5eeff);
     background: -moz-linear-gradient(#ffb3ff, #e5eeff);
@@ -63,6 +64,7 @@ body{
   padding: 5px 10px;
   padding-top: 15px;
   position: relative;
+  z-index: 1;
 }
 
 .intro:hover{
@@ -88,6 +90,7 @@ body{
 .dropdown{
   position: relative;
   display: inline-block;
+  z-index: 10;
 }
 /*this is for the content in the dropdown to be hidden by default and also the way the content looks when opened*/
 .dropdown-content{
@@ -110,6 +113,7 @@ body{
   background-color: #D5D3D2;
   color: white;
   text-decoration: overline;
+  z-index: 10;
   
 }
 
@@ -121,6 +125,7 @@ body{
 .dropdown:hover .dropdown-content{
   display: block;
 }
+
 
 
 </style>
